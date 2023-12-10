@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Siyahi from './Component/Siyahi';
+import { Routes ,Route } from 'react-router';
+import { NavLink } from 'react-router-dom';
+import Backet from './Component/Backet';
+import { useSelector } from 'react-redux';
 
 function App() {
   return (
+   
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <NavLink to='/' ><button className='home'>Home</button></NavLink>
+      <Routes>
+      <Route path="/" element={  <Siyahi />}/>
+      <Route path='/backet' element={ <Backet />}/>
+     </Routes> */}
+     <Siyahi/>
     </div>
   );
 }

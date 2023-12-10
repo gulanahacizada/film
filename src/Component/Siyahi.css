@@ -1,0 +1,192 @@
+
+.big{
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    background-color: teal;
+    height: 100px;
+    color: white;
+    font-size: 60px;
+    text-align: start;
+    position: relative;
+    bottom: 40px;
+    padding-top: 40px;
+}
+input{
+    display: flex;
+    width: 350px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border: 2px solid teal;
+    font-size: 20px;
+   
+}
+.inp{
+    outline-style: dashed;
+    outline-color: teal;
+}
+.key{
+    display: flex;
+    background-color: rgb(228, 201, 166);
+    width: 650px;
+    height: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 30px;
+}
+.right{
+    margin-left: 20px;
+    width: 500px;
+    height: 40%;
+    margin-right: 18px;
+    display: block;
+}
+.right2{
+    border: 8px solid teal;
+    border-radius: 5px;
+}
+.new{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-right: 20px;
+}
+button{
+    margin-bottom: 10px;
+}
+.second{
+   margin-left: 20px;
+   margin-right: 20px;
+}
+.second button{
+    width: 150px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    height: 50px ;
+    border: 2px solid brown;
+    color: brown;
+    font-size: 20px;
+}
+.right2 button{
+    width: 150px;
+    height: 40px ;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    border: 2px solid teal;
+    color: teal;
+    font-size: 20px;
+}
+.delete{
+    position: relative;
+    width: 70px !important;
+    color: brown !important;
+    border: 2px solid brown !important;
+    top:15px !important;
+    left: 10px !important;
+}
+.list{
+    margin-top: 20px;
+    border:2px dotted teal;
+    display: none;
+    font-size: 20px;
+}
+.list p{
+    margin-top: -5px;
+}
+.list h2{
+    margin-bottom: -40px;
+}
+.backet{
+    display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 991px){
+    .header{
+        height: 80px;
+    }
+    .key{
+        width: 85%;
+        height: 30%;
+        min-height: 208px;
+        /* margin-right: 1%; */
+        min-width: 170px;
+        max-width: 620px;
+        margin-left: 5px;
+    }
+    img{
+        width: 40%;
+        height: 30%;
+        margin-top: 10px;
+        border-radius: 13%;
+        min-height: 180px;
+        max-height: 200px;
+    }
+    .second{
+        margin-left: 2px;
+        margin-right: 5px;
+     }
+    .second button{
+        width: 72%;
+        height: 19%;
+        margin-right: 0px;
+        margin-left: 20%;
+        margin-bottom: 3px;
+        font-size: 100%;
+    }
+    .second h1{
+        font-size: 80%;
+    }
+    .right{
+        margin-right: 0px;
+        margin-left: 5px;
+    }
+    .right2{
+        border: 2px solid teal;
+        margin-right: 0px;
+        width: 65%;
+        min-width: 70px;
+        padding-right: 2px;
+    }
+    .bn{
+        width: 70%;
+        height: 20%;
+        font-size: 80%;
+        margin-left: 10px;
+    }
+    .right2 button{
+        width: 80%;
+        font-size: 100%;
+        margin-left: 10%;
+    }
+    .new{
+        width: 20%;
+        font-size: 80%;
+    }
+    .mom{
+        list-style-type: none;
+    }
+    .ul{
+        margin: 0px;
+        margin-left: 5%;
+        padding: 0px;
+    }
+    .inp{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1279px){
+    .header{
+        height: 100px;
+    }
+    .right2{
+        margin-right: -20px;
+        width: 90%;
+        padding-right: 2px;
+    }
+    .bn{
+        width: 80%;
+    }
+}

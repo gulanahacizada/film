@@ -1,7 +1,19 @@
 .App {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
 }
-
+.home{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  color: teal;
+  border: 2px solid teal;
+  top:30px;
+  left:50px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
