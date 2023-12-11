@@ -12,6 +12,9 @@ function Siyahi() {
     setFind(e.target.value.toLowerCase())
     let leftm = document.querySelector(".leftm")
     leftm.style.display = "none"
+    if(e.target.value.trim()==""){
+      leftm.style.display = "inline"
+    }
   }
 
 
@@ -162,7 +165,7 @@ function Siyahi() {
                 <div className="key" key={b}>
                   <img src={a.Poster} alt="poster" />
                   <div className="second">
-                    <h1>{a.Title}</h1>
+                    <h1>{a.Title} ({a.Year})</h1>
                     <button className='add' onClick={name}>Add list</button>
                     <button>
                       <a href={`https://m.imdb.com/title/${a.imdbID}/?ref_=chttp_t_1`} target="_blank" rel="noopener noreferrer">
@@ -179,7 +182,7 @@ function Siyahi() {
               <div className="key" key={b}>
                 <img src={a.Poster} alt="poster" />
                 <div className="second">
-                  <h1>{a.Title}</h1>
+                  <h1>{a.Title} ({a.Year})</h1>
                   <button className='add' onClick={name}>Add list</button>
                   <button>
                     <a href={`https://m.imdb.com/title/${a.imdbID}/?ref_=chttp_t_1`} target="_blank" rel="noopener noreferrer">
@@ -197,6 +200,7 @@ function Siyahi() {
             <ul className='ul'>
               {
                 Addedfilms.map((item, ind) => (
+                  
                   <li className='mom' key={ind}>
                     <li className="new" >
                       <h3>{item}</h3>
